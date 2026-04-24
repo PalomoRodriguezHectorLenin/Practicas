@@ -16,16 +16,16 @@ void numeracionPar(int i, int j, int matriz[FILAS][COLUMNAS]){
 void llenarMatriz(int matriz[FILAS][COLUMNAS]){
 	for(int i=0; i<FILAS; i++){
 		for(int j=0; j<COLUMNAS; j++){
-			int operador = j+1;
+			
 			switch(i){
 				case 0:
-					numeracion(i,operador,matriz);
+					numeracion(i,j,matriz);
 					break;
 				case 1:
-					numeracionImpar(i,operador,matriz);
+					      numeracionImpar(i,j,matriz);
 					break;
 				case 2:
-					numeracionPar(i,operador,matriz);
+					numeracionPar(i,j,matriz);
 					break;
 			}
 		}
