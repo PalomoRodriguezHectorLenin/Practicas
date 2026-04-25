@@ -1,4 +1,11 @@
 #include "operaciones.h"
+
+void mostrarResultados(int matriz[MAX_THREADS]){
+	for(int i=0; i<MAX_THREADS; i++){
+		printf("\nResultado %d: %d\n", (i+1), matriz[i]);
+	}
+}
+
 void numeracion(int i,int j, int matriz[FILAS][COLUMNAS]){
 	matriz[i][j] = (j+1);
 }
